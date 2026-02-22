@@ -91,9 +91,9 @@ Assesses focus precision and depth of field appropriateness:
 
 This function is composed of specialized evaluation sub-functions that assess specific dimensions of cat photo quality:
 
-- **Sharpness and Focus Assessment**: https://github.com/{{ .Owner }}/{{ .Task0 }}
-- **Lighting Quality Evaluation**: https://github.com/{{ .Owner }}/{{ .Task1 }}
-- **Detail Clarity and Color Reproduction**: https://github.com/{{ .Owner }}/{{ .Task2 }}
+- **Sharpness and Focus Assessment**: https://github.com/ObjectiveAI-claude-code-1/assess-cat-focus-quality
+- **Lighting Quality Evaluation**: https://github.com/ObjectiveAI-claude-code-1/evaluate-cat-lighting
+- **Detail Clarity and Color Reproduction**: https://github.com/ObjectiveAI-claude-code-1/assess-detail-and-color-accuracy
 
 Each sub-function is automatically invented to provide deep, specialized evaluation of its respective quality dimension.
 

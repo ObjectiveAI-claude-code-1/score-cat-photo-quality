@@ -1,5 +1,44 @@
 {
   "type": "scalar.function",
+  "tasks": [
+    {
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "assess-cat-focus-quality",
+      "commit": "738bbb410a4ebfa122ed702114c5b4e3e77b24bb",
+      "input": {
+        "$jmespath": "input"
+      },
+      "output": {
+        "$jmespath": "output"
+      }
+    },
+    {
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "evaluate-cat-lighting",
+      "commit": "4f3a2f4d00de1807a9870c27c8d0273f1af10bae",
+      "input": {
+        "$jmespath": "input"
+      },
+      "output": {
+        "$jmespath": "output"
+      }
+    },
+    {
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "assess-detail-and-color-accuracy",
+      "commit": "950b8515861993fa7825655dd8e86e4ff4668ff3",
+      "input": {
+        "$jmespath": "input"
+      },
+      "output": {
+        "$jmespath": "output"
+      }
+    }
+  ],
+  "description": "Evaluates cat photographs and assigns a quality score between 0 and 1 based on technical excellence and visual clarity. Assesses sharpness and focus, lighting effectiveness, fine detail clarity, and color reproduction accuracy to identify photographs that combine technical mastery with compelling subject presentation.",
   "input_schema": {
     "type": "object",
     "description": "A single cat photo with its URL and optional metadata",
@@ -20,98 +59,5 @@
     "required": [
       "url"
     ]
-  },
-  "tasks": [
-    {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "object",
-        "description": "A single cat photo with its URL and optional metadata",
-        "properties": {
-          "url": {
-            "type": "string",
-            "description": "The URL or file path to the cat photo image"
-          },
-          "title": {
-            "type": "string",
-            "description": "An optional title or label for the photo"
-          },
-          "photographer": {
-            "type": "string",
-            "description": "An optional credit to the photographer"
-          }
-        },
-        "required": [
-          "url"
-        ]
-      },
-      "input": {
-        "$jmespath": "input"
-      },
-      "output": {
-        "$jmespath": "output"
-      }
-    },
-    {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "object",
-        "description": "A single cat photo with its URL and optional metadata",
-        "properties": {
-          "url": {
-            "type": "string",
-            "description": "The URL or file path to the cat photo image"
-          },
-          "title": {
-            "type": "string",
-            "description": "An optional title or label for the photo"
-          },
-          "photographer": {
-            "type": "string",
-            "description": "An optional credit to the photographer"
-          }
-        },
-        "required": [
-          "url"
-        ]
-      },
-      "input": {
-        "$jmespath": "input"
-      },
-      "output": {
-        "$jmespath": "output"
-      }
-    },
-    {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "object",
-        "description": "A single cat photo with its URL and optional metadata",
-        "properties": {
-          "url": {
-            "type": "string",
-            "description": "The URL or file path to the cat photo image"
-          },
-          "title": {
-            "type": "string",
-            "description": "An optional title or label for the photo"
-          },
-          "photographer": {
-            "type": "string",
-            "description": "An optional credit to the photographer"
-          }
-        },
-        "required": [
-          "url"
-        ]
-      },
-      "input": {
-        "$jmespath": "input"
-      },
-      "output": {
-        "$jmespath": "output"
-      }
-    }
-  ],
-  "description": "Evaluates cat photographs and assigns a quality score between 0 and 1 based on technical excellence and visual clarity. Assesses sharpness and focus, lighting effectiveness, fine detail clarity, and color reproduction accuracy to identify photographs that combine technical mastery with compelling subject presentation."
+  }
 }
